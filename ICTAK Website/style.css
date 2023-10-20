@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    background-image: url("images/images.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: black;   
+    height: 70px;
+}
+nav {
+    float: right;
+    margin-right: 5%;
+    margin-top: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    border: 1px solid white;
+    padding:10px 8px;
+    margin-right: 5px; 
+}
+nav a:hover{
+    background-color: teal;
+    color: black;
+}
+#img1{
+    margin-left: 180px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    
+}
+.sidetext{
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sidetext ul{  
+    margin-top: 20px;
+    list-style-type: square;
+}
+form{
+    float: right;
+    background-color: beige;
+    border: 1px solid red;
+    height: 275px;
+    margin-top: 6% ;
+    margin-right: 60px;
+    width: 13%;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+form h3{
+    padding-bottom: 20px;
+    text-align: center;
+}
+#log{
+   background-color: dodgerblue;
+   color: white;
+   width: 80%;
+   border: 0;
+   height: 20px;
+}
+form h5{
+    padding-top: 20px;
+}
+form a{
+    color: blue;
+}
+.container{
+    margin-top: 30%;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+.container .box{
+    float: left;
+    border:3px solid white;
+    background-color: gainsboro;
+    width:22%;
+    height: 200px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.container .box h4{
+    text-align: center;
+}
+.container .box p{
+    text-align: justify;    
+    padding-top: 10px;
+}
+.container .box a{
+    color: red;
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 58%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
