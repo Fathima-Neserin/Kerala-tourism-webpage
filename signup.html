@@ -74,7 +74,7 @@
   <img id="img4" src="googlogo.png" alt="googlogo">
   </a>
 <h5>SignUp Now</h5>
-  <form class="row g-3">
+  <form onsubmit="return validate()" action="home.html" class="row g-3">
     <div class="col-md-6">
       <label for="text" class="form-label">Name of Participant *</label><br>
       <input type="text" class="form-control" id="name">
@@ -91,22 +91,27 @@
     </div>
     <div class="col-12">
       <label for="email" class="form-label">Email id of Participant(Your Username)*</label>
-      <input type="email" class="form-control" id="email">
+      <input onkeyup="return validateEmail()" type="email" class="form-control" id="email">
+      <span id="err1"></span>
     </div>
     <div class="col-12">
     <label for="password" class="form-label">Password*</label>
-      <input type="passw" class="form-control" id="passw"><br>
+      <input onkeyup="validatePassword()" type="passw" class="form-control" id="passw"><br>
+      <span id ="err4"></span>
       <p>(Minimum 8 characters)</p>
         <label for="password" class="form-label">Retype Password*</label>
-          <input type="passw" class="form-control" id="passw">
+          <input onkeyup="return validateConfirmPassword()" type="passw" class="form-control" id="conpassw">
+          <span id="err5"></span>
     </div>
     <div class="col-12">
       <label for="mobile no" class="form-label">Mob No:*</label>
-        <input type="mobile number" class="form-control" id="mobile number"><br>
+        <input onkeyup="return validateMobileNumber()" type="mobile number " class="form-control" id="mobilenumber"><br>
         </div>
+        <span id="err2"></span>
         <div class="col-12">
           <label for="phone no" class="form-label">Telephone:</label>
-            <input type="phone number" class="form-control" id="phone number"><br>
+            <input onkeyup="return  validatePhoneNumber()" type="phone number" class="form-control" id="phonenumber"><br>
+            <span id="err3"></span>
         </div>
     
     <div class="col-12">
@@ -115,5 +120,8 @@
   </form>
 </section>
 </div>
+<script src="script.js">
+  
+</script>
 </body>
 </html>

@@ -42,8 +42,9 @@
           <label for="username" class="form-label">Username</label>
         </div>
         <div class="mb-3 col-lg-8 myMargin">
-          <input type="password" class="form-control" id="exampleInputPassword1" autocomplete="true">
+          <input  onkeyup="validatePassword()" type="password" class="form-control" id="passw" autocomplete="true">
           <label for="exampleInputPassword1" class="form-label">Password</label>
+          <span id="err4"></span>
         </div>
         <div class="mb-3 col-lg-8 myMargin form-check">
           <input type="checkbox" class="form-check-input"  id="exampleCheck1"autocomplete="true">
@@ -52,5 +53,8 @@
         <button class="myMargin" id="log"  type="submit" class="btn btn-primary"autocomplete="true">Login</button>
       </form>
 </section>
+<script src="script.js">
+  
+</script>
 </body>
 </html>
